@@ -5,6 +5,12 @@
   font-size: 16px;
 }
 
+.c-4b804c {
+  color: #4b804c;
+}
+.fw-500 {
+  font-weight: 500;
+}
 .container-web {
   width: 100%;
   max-width: 1920px;
@@ -101,12 +107,16 @@ input:checked + .slider:before {
   color: #ffffff;
 }
 
-#carousel-home.carousel .carousel-control-prev-icon, #carousel-home.carousel .carousel-control-next-icon{
-    width: 40px;
-    height: 40px;
-    background-color: rgba(0, 0, 0, 0.5);
+#carousel-home.carousel .carousel-control-prev-icon,
+#carousel-home.carousel .carousel-control-next-icon {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
 }
-
+.section-solution {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
 
 @media (max-width: 575px) {
   .label-switch-lang {
