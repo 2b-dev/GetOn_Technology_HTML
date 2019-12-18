@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css?family=Prompt:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=thai");
+
+* {
+  font-family: "Prompt", sans-serif;
+  font-size: 16px;
+}
+
+.container-web {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.div-header-logo {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-header {
+  width: 180px;
+  margin-top: 0px;
+}
+
+.label-switch-lang {
+  position: absolute;
+  right: 2rem;
+  top: 1rem;
+}
+.switch {
+  display: inline-block;
+  height: 36px;
+  position: relative;
+  width: 100px;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  background-color: #ffffff;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 0.4s;
+  border: 1px solid #4b804c;
+}
+
+.slider:before {
+  background-color: #4b804c;
+  top: 0px;
+  bottom: 0px;
+  content: "";
+  height: 34px;
+  left: 0px;
+  position: absolute;
+  transition: 0.4s;
+  width: 55px;
+}
+
+input:checked + .slider {
+  background-color: #ffffff;
+}
+
+input:checked + .slider:before {
+  transform: translateX(43px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 34px;
+}
+
+.box-text-lang {
+  width: 50px;
+  height: 35px;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #4b804c;
+}
+.box-text-lang.box-th {
+  left: 0;
+}
+.box-text-lang.box-en {
+  right: 0;
+}
+.box-text-lang.active {
+  color: #ffffff;
+}
+
+@media (max-width: 575px) {
+  .label-switch-lang {
+    right: 0.5rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+@media (min-width: 1200px) {
+}
