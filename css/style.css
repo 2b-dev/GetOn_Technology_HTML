@@ -15,6 +15,7 @@
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
+  position: relative;
 }
 
 .div-header-logo {
@@ -25,7 +26,8 @@
 }
 
 .logo-header {
-  width: 180px;
+  width: auto;
+  height: 110px;
   margin-top: 0px;
 }
 
@@ -118,9 +120,9 @@ input:checked + .slider:before {
   padding-bottom: 3rem;
 }
 .box-solutions-home {
-  width: 230px;
-  margin-left: 10px;
-  margin-right: 10px;
+  width: 220px;
+  margin-left: 8px;
+  margin-right: 8px;
   text-align: center;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 0px 8px -1px rgba(0, 0, 0, 0.1);
@@ -137,31 +139,93 @@ input:checked + .slider:before {
 .box-solutions-home .img-solution-home {
   width: 80%;
 }
-.box-solutions-home p{
+.box-solutions-home p {
   color: #000000;
   font-size: 16px;
 }
 .box-solutions-home:hover {
   background-image: linear-gradient(to right, #1b6565, #1a9564, #4a954c);
 }
-.box-solutions-home:hover p{
+.box-solutions-home:hover p {
   color: #ffffff;
 }
 .box-solutions-home:hover .img-solution-home {
   -webkit-filter: brightness(0) invert(1);
   filter: brightness(0) invert(1);
 }
-.slider-banner{
+.slider-banner {
   position: relative;
 }
-.ul-nav-geton{
+.ul-nav-geton {
   padding-left: 0;
   list-style: none;
   display: flex;
   justify-content: center;
   margin-bottom: 0;
   color: #ffffff;
+}
+.ul-nav-geton .li-nav-geton .a-nav-geton {
+  display: block;
+  color: #ffffff;
+  padding-top: 0.85rem;
+  padding-bottom: 0.85rem;
+  font-weight: 400;
+  font-size: 20px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.ul-nav-geton .li-nav-geton .a-nav-geton:hover,
+.ul-nav-geton .li-nav-geton .a-nav-geton:active,
+.ul-nav-geton .li-nav-geton .a-nav-geton.active {
+  color: #b4d8b4;
+}
+.nav-geton {
+  min-height: 70px;
   background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-geton {
+  z-index: 3;
+  position: relative;
+}
+.main-geton {
+  margin-top: -70px;
+  z-index: 2;
+}
+.btn-search {
+  width: 55px;
+  height: 55px;
+  background-image: url("../img/icon_close_search_nav.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 25px auto;
+}
+.btn-search:hover{
+  background-image: url("../img/icon_close_search_nav_hover.png");
+}
+.btn-search.collapsed{
+  background-image: url("../img/icon_search_nav.png");
+}
+.btn-search.collapsed:hover {
+  background-image: url("../img/icon_search_nav_hover.png");
+}
+.box-search {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-bottom: 1rem;
+}
+.input-search-nav {
+  width: 100%;
+  border-radius: 20px;
+}
+.input-search-nav:focus,
+.input-search-nav:active {
+  box-shadow: 0 0 0 1px rgba(180, 216, 180, 0.76);
+  border-color: #b4d8b4;
 }
 @media (max-width: 575px) {
   .label-switch-lang {
@@ -176,11 +240,67 @@ input:checked + .slider:before {
   .box-solutions-home {
     width: 40%;
   }
+  .btn-nav-responsive {
+    position: absolute;
+    bottom: 10px;
+    right: 1rem;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+  .btn-nav-responsive {
+    position: absolute;
+    bottom: 10px;
+    right: 2rem;
+  }
 }
-
+@media (max-width: 991px) {
+  .ul-nav-geton {
+    display: block;
+    width: 100%;
+  }
+  .div-header-logo {
+    background-color: #ffffff;
+  }
+  .nav-geton {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  .main-geton {
+    margin-top: 0;
+  }
+  .ul-nav-geton .li-nav-geton .a-nav-geton {
+    text-align: center;
+  }
+  .li-contain-btn-search{
+    display: none!important;
+  }
+  .input-search-nav{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 40px;
+    background-image: url('../img/icon_search_nav_hover.png');
+    background-position: 12px center;
+    background-repeat: no-repeat;
+    background-size: 22px;
+  }
+}
+@media (min-width: 992px) {
+  .header-geton .navbar-collapse {
+    display: flex;
+  }
+  .btn-nav-responsive {
+    display: none;
+  }
+  .li-nav-geton .input-search-nav{
+    display: none;
+  }
+}
 @media (min-width: 992px) and (max-width: 1199px) {
 }
 
