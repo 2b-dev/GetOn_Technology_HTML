@@ -101,6 +101,13 @@ input:checked + .slider:before {
   color: #ffffff;
 }
 
+#carousel-home.carousel .carousel-control-prev-icon, #carousel-home.carousel .carousel-control-next-icon{
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
 @media (max-width: 575px) {
   .label-switch-lang {
     right: 0.5rem;
