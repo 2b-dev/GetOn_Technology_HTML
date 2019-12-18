@@ -114,10 +114,43 @@ input:checked + .slider:before {
   background-color: rgba(0, 0, 0, 0.5);
 }
 .section-solution {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
-
+.box-solutions-home {
+  width: 230px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 0px 8px -1px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 8px -1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 8px -1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  cursor: pointer;
+}
+.box-solutions-home .img-solution-home {
+  width: 80%;
+}
+.box-solutions-home p{
+  color: #000000;
+  font-size: 16px;
+}
+.box-solutions-home:hover {
+  background-image: linear-gradient(to right, #1b6565, #1a9564, #4a954c);
+}
+.box-solutions-home:hover p{
+  color: #ffffff;
+}
+.box-solutions-home:hover .img-solution-home {
+  -webkit-filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
+}
 @media (max-width: 575px) {
   .label-switch-lang {
     right: 0.5rem;
@@ -125,6 +158,12 @@ input:checked + .slider:before {
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
+}
+
+@media (max-width: 767px) {
+  .box-solutions-home {
+    width: 40%;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
