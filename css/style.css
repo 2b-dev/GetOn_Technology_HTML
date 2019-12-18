@@ -151,6 +151,18 @@ input:checked + .slider:before {
   -webkit-filter: brightness(0) invert(1);
   filter: brightness(0) invert(1);
 }
+.slider-banner{
+  position: relative;
+}
+.ul-nav-geton{
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.4);
+}
 @media (max-width: 575px) {
   .label-switch-lang {
     right: 0.5rem;
