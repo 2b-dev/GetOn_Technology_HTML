@@ -23,6 +23,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #ffffff;
 }
 
 .logo-header {
@@ -188,10 +189,18 @@ input:checked + .slider:before {
 }
 .header-geton {
   z-index: 3;
-  position: relative;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: transform 300ms;
+}
+.header-geton.hide-header{
+  transform: translateY(-180px);
 }
 .main-geton {
-  margin-top: -70px;
+  margin-top: 110px;
   z-index: 2;
 }
 .btn-search {
@@ -269,7 +278,7 @@ input:checked + .slider:before {
     background-color: rgba(0, 0, 0, 0.7);
   }
   .main-geton {
-    margin-top: 0;
+    margin-top: 110px;
   }
   .ul-nav-geton .li-nav-geton .a-nav-geton {
     text-align: center;
