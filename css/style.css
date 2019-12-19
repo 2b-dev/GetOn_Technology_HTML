@@ -242,7 +242,26 @@ input:checked + .slider:before {
   background-image: linear-gradient(to right, #1b6565, #1a9564, #4a954c);
   padding-left: 2rem;
   padding-right: 8rem;
+  position: relative;
 }
+.tower-social{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100px;
+  background-color: #ffffff;
+  padding-left: 15px;
+}
+.container-towersocail{
+  width: 85px;
+  height: 100%;
+  background-color: #4b804c;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+
 @media (max-width: 575px) {
   .label-switch-lang {
     right: 0.5rem;
