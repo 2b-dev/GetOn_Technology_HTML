@@ -236,6 +236,13 @@ input:checked + .slider:before {
   box-shadow: 0 0 0 1px rgba(180, 216, 180, 0.76);
   border-color: #b4d8b4;
 }
+.section-networksocial{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-image: linear-gradient(to right, #1b6565, #1a9564, #4a954c);
+  padding-left: 2rem;
+  padding-right: 8rem;
+}
 @media (max-width: 575px) {
   .label-switch-lang {
     right: 0.5rem;
