@@ -511,6 +511,10 @@ input:checked + .slider:before {
   .li-social-tower:last-of-type {
     margin-right: 0;
   }
+  .section-customer{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
 }
 @media (min-width: 992px) {
   .header-geton .navbar-collapse {
@@ -530,5 +534,9 @@ input:checked + .slider:before {
   .update-event, .update-product {
     padding-left: 6rem;
     padding-right: 6rem;
+  }
+  .section-customer{
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 }
