@@ -328,16 +328,30 @@ input:checked + .slider:before {
 }
 .short-title-event-geton {
   font-size: 1.5rem;
-  line-height: 1.5rem;
-  height: 3rem;
+  line-height: 1.75rem;
+  height: 3.5rem;
   overflow-y: hidden;
 }
 .shrot-detail-event-geton {
   font-size: 1.25rem;
-  line-height: 1.25rem;
-  height: 2.5rem;
+  line-height: 1.5rem;
+  height: 3rem;
   overflow-y: hidden;
-  color: #000000;
+  color: #58595b;
+  font-weight: 400;
+}
+.btn-seemore-content{
+  font-size: 1.15rem;
+  border: 1px solid #58595b;
+  border-radius: 1.8rem;
+  min-width: 200px;
+  color: #58595b;
+  transition: all 500ms;
+}
+.btn-seemore-content:hover{
+  background-color: #58595b;
+  background-image: linear-gradient(to right, #1b6565, #1a9564, #4a954c);
+  color: #ffffff;
 }
 @media (max-width: 575px) {
   .label-switch-lang {
