@@ -245,6 +245,14 @@ input:checked + .slider:before {
   position: relative;
   min-height: 520px;
 }
+.section-pagination {
+  background-image: linear-gradient(to right, #1b6565, #1a9564, #4a954c);
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .tower-social {
   position: absolute;
   top: 0;
@@ -300,7 +308,8 @@ input:checked + .slider:before {
   width: 50px;
 }
 .update-event,
-.update-product {
+.update-product,
+.section-content-news {
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
@@ -610,6 +619,40 @@ input:checked + .slider:before {
   font-size: 1.2rem;
   color: #ffffff;
 }
+.geton-pagination.pagination{
+  overflow-x: auto;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.geton-pagination.pagination .page-item .page-link {
+  font-size: 20px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 7px;
+  margin-right: 7px;
+  color: #ffffff;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+.geton-pagination.pagination .page-item .page-link:hover {
+  color: #4a954c;
+}
+.geton-pagination.pagination .page-item.active .page-link {
+  background-color: #1b6565;
+  border: 1px solid #1b6565;
+}
+.geton-pagination.pagination .page-item .page-link.page-pre,
+.geton-pagination.pagination .page-item .page-link.page-next {
+  border-radius: 25px;
+  width: 100px;
+}
 @media (max-width: 575px) {
   .label-switch-lang {
     right: 0.5rem;
@@ -736,6 +779,10 @@ input:checked + .slider:before {
   .li-banner-nav .link-banner-nav:hover::after,
   .li-banner-nav .link-banner-nav.active::after {
     border-color: transparent transparent transparent #ffffff;
+  }
+  .section-search-news{
+    padding-top: 1.8rem;
+    padding-bottom: 0rem;
   }
   .left-search-news {
     background-image: none;
@@ -1033,7 +1080,8 @@ input:checked + .slider:before {
 @media (min-width: 1200px) {
   .update-event,
   .update-product,
-  .section-search-news {
+  .section-search-news,
+  .section-content-news {
     padding-left: 6rem;
     padding-right: 6rem;
   }
