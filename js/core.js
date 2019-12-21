@@ -7,7 +7,7 @@ $("#switchlang").on("click", function() {
     $(".box-th").addClass("active");
   }
 });
-$(".owl-carousel").owlCarousel({
+$("#footer-owl-carousel").owlCarousel({
   loop: true,
   responsiveClass: true,
   autoplay: true,
@@ -28,6 +28,32 @@ $(".owl-carousel").owlCarousel({
     1200: {
       items: 7,
       margin: 40,
+      nav: false,
+      loop: true
+    }
+  }
+});
+$("#images-news").owlCarousel({
+  loop: true,
+  responsiveClass: true,
+  autoplay: true,
+  autoplayTimeout: 3000,
+  autoplayHoverPause: true,
+  dots: false,
+  responsive: {
+    0: {
+      items: 1,
+      margin: 0,
+      nav: false
+    },
+    600: {
+      items: 3,
+      margin: 0,
+      nav: false
+    },
+    1200: {
+      items: 5,
+      margin: 0,
       nav: false,
       loop: true
     }
