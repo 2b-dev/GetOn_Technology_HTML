@@ -31,7 +31,7 @@
   text-align: center;
   margin-bottom: 2rem;
 }
-.box-content-detail-news, .box-images-detail-news{
+.box-content-detail-news, .box-images-detail-news, .box-social-detail-news{
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -323,7 +323,7 @@ input:checked + .slider:before {
 }
 .update-event,
 .update-product,
-.section-content-news {
+.section-content-news, {
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
@@ -669,6 +669,58 @@ input:checked + .slider:before {
 }
 .text-detail-news{
   font-size: 20px;
+}
+.ul-social-news{
+  width: 100%;
+  margin-bottom: 0;
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+.li-social-news{
+  margin-right: 1rem;
+}
+.li-social-news:last-of-type{
+  margin-right: 0;
+}
+.link-social-news{
+  display: flex;
+  text-align: center;
+  color: #58595b;
+  font-weight: 500;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.link-social-news:hover{
+  color: #4a954c;
+}
+.icon-social-news{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4b804c;
+  margin-bottom: 0.75rem;
+}
+.hr-social-news{
+  border-top: 1px solid #58595b;
+  margin-top: 3rem;
+}
+.icon-social-news:hover{
+  background-color: #ffffff;
+  border: 1px solid #4b804c;
+}
+.icon-social-news i {
+  color: #ffffff;
+}
+.icon-social-news:hover i{
+  color: #4a954c;
 }
 @media (max-width: 575px) {
   .label-switch-lang {
@@ -1098,7 +1150,8 @@ input:checked + .slider:before {
   .update-event,
   .update-product,
   .section-search-news,
-  .section-content-news {
+  .section-content-news,
+  .section-relate-news {
     padding-left: 6rem;
     padding-right: 6rem;
   }
@@ -1106,7 +1159,7 @@ input:checked + .slider:before {
     padding-left: 3rem;
     padding-right: 3rem;
   }
-  .box-content-detail-news, .box-images-detail-news{
+  .box-content-detail-news, .box-images-detail-news, .box-social-detail-news{
     padding-left: 5rem;
     padding-right: 5rem;
   }
