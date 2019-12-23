@@ -168,6 +168,7 @@ input:checked + .slider:before {
   -webkit-filter: brightness(0) invert(1);
   filter: brightness(0) invert(1);
 }
+
 .slider-banner {
   position: relative;
 }
@@ -1162,5 +1163,20 @@ input:checked + .slider:before {
   .box-content-detail-news, .box-images-detail-news, .box-social-detail-news{
     padding-left: 5rem;
     padding-right: 5rem;
+  }
+  .box-solutions-home.solution-page{
+    width: 330px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .box-solutions-home.solution-page .img-solution-home{
+    width: 60%;
+  }
+  .box-solutions-home.solution-page p{
+    font-size: 20px;
+    font-weight: 400;
   }
 }
