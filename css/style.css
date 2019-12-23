@@ -912,6 +912,19 @@ input:checked + .slider:before {
     padding-bottom: 0.5rem;
     width: 70%;
   }
+  .txt-num-lv-service{
+    font-size: 26px;
+  }
+  .txt-title-lv-service{
+    font-size: 24px;
+  }
+  .txt-detail-lv-service{
+    font-size: 18px;
+  }
+  .hr-lv-service{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -1024,6 +1037,15 @@ input:checked + .slider:before {
   .li-banner-nav .link-banner-nav:hover::after,
   .li-banner-nav .link-banner-nav.active::after {
     border-color: transparent transparent transparent #ffffff;
+  }
+  .txt-num-lv-service{
+    font-size: 30px;
+  }
+  .txt-title-lv-service{
+    font-size: 26px;
+  }
+  .txt-detail-lv-service{
+    font-size: 20px;
   }
 }
 @media (max-width: 991px) {
