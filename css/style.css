@@ -26,16 +26,18 @@
   align-items: center;
   background-color: #ffffff;
 }
-.box-img-detail-news{
+.box-img-detail-news {
   width: 100%;
   text-align: center;
   margin-bottom: 2rem;
 }
-.box-content-detail-news, .box-images-detail-news, .box-social-detail-news{
+.box-content-detail-news,
+.box-images-detail-news,
+.box-social-detail-news {
   padding-left: 1rem;
   padding-right: 1rem;
 }
-.img-detail-news{
+.img-detail-news {
   width: 100%;
   max-width: 1024px;
   height: auto;
@@ -324,7 +326,7 @@ input:checked + .slider:before {
 }
 .update-event,
 .update-product,
-.section-content-news, {
+.section-content-news {
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
@@ -634,7 +636,7 @@ input:checked + .slider:before {
   font-size: 1.2rem;
   color: #ffffff;
 }
-.geton-pagination.pagination{
+.geton-pagination.pagination {
   overflow-x: auto;
   display: flex;
   flex-direction: row;
@@ -668,10 +670,10 @@ input:checked + .slider:before {
   border-radius: 25px;
   width: 100px;
 }
-.text-detail-news{
+.text-detail-news {
   font-size: 20px;
 }
-.ul-social-news{
+.ul-social-news {
   width: 100%;
   margin-bottom: 0;
   padding-left: 0;
@@ -680,13 +682,13 @@ input:checked + .slider:before {
   align-items: center;
   list-style: none;
 }
-.li-social-news{
+.li-social-news {
   margin-right: 1rem;
 }
-.li-social-news:last-of-type{
+.li-social-news:last-of-type {
   margin-right: 0;
 }
-.link-social-news{
+.link-social-news {
   display: flex;
   text-align: center;
   color: #58595b;
@@ -696,10 +698,10 @@ input:checked + .slider:before {
   align-items: center;
   flex-direction: column;
 }
-.link-social-news:hover{
+.link-social-news:hover {
   color: #4a954c;
 }
-.icon-social-news{
+.icon-social-news {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -709,19 +711,49 @@ input:checked + .slider:before {
   background-color: #4b804c;
   margin-bottom: 0.75rem;
 }
-.hr-social-news{
+.hr-social-news {
   border-top: 1px solid #58595b;
   margin-top: 3rem;
 }
-.icon-social-news:hover{
+.icon-social-news:hover {
   background-color: #ffffff;
   border: 1px solid #4b804c;
 }
 .icon-social-news i {
   color: #ffffff;
 }
-.icon-social-news:hover i{
+.icon-social-news:hover i {
   color: #4a954c;
+}
+.box-card-lv-service {
+  padding: 2rem;
+  -webkit-box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.2);
+  margin-bottom: 3rem;
+}
+.txt-num-lv-service{
+  font-size: 44px;
+  font-weight: 500;
+  color: #58595b;
+  margin-bottom: 0;
+}
+.txt-title-lv-service{
+  font-size: 36px;
+  font-weight: 500;
+  color: #4a954c;
+  margin-bottom: 0;
+}
+.txt-detail-lv-service{
+  font-size: 24px;
+  font-weight: 400;
+  color: #58595b;
+  margin-bottom: 0;
+}
+.hr-lv-service{
+  border-top: 2px solid #58595b;
+  margin-top: 1.75rem;
+  margin-bottom: 1.75rem;
 }
 @media (max-width: 575px) {
   .label-switch-lang {
@@ -850,7 +882,7 @@ input:checked + .slider:before {
   .li-banner-nav .link-banner-nav.active::after {
     border-color: transparent transparent transparent #ffffff;
   }
-  .section-search-news{
+  .section-search-news {
     padding-top: 1.8rem;
     padding-bottom: 0rem;
   }
@@ -1160,11 +1192,13 @@ input:checked + .slider:before {
     padding-left: 3rem;
     padding-right: 3rem;
   }
-  .box-content-detail-news, .box-images-detail-news, .box-social-detail-news{
+  .box-content-detail-news,
+  .box-images-detail-news,
+  .box-social-detail-news {
     padding-left: 5rem;
     padding-right: 5rem;
   }
-  .box-solutions-home.solution-page{
+  .box-solutions-home.solution-page {
     width: 330px;
     margin-left: 2rem;
     margin-right: 2rem;
@@ -1172,10 +1206,10 @@ input:checked + .slider:before {
     padding-left: 2rem;
     padding-right: 2rem;
   }
-  .box-solutions-home.solution-page .img-solution-home{
+  .box-solutions-home.solution-page .img-solution-home {
     width: 60%;
   }
-  .box-solutions-home.solution-page p{
+  .box-solutions-home.solution-page p {
     font-size: 20px;
     font-weight: 400;
   }
