@@ -59,6 +59,32 @@ $("#images-news").owlCarousel({
     }
   }
 });
+$("#images-agent").owlCarousel({
+  loop: true,
+  responsiveClass: true,
+  autoplay: true,
+  autoplayTimeout: 3000,
+  autoplayHoverPause: true,
+  dots: true,
+  responsive: {
+    0: {
+      items: 1,
+      margin: 0,
+      nav: false
+    },
+    600: {
+      items: 3,
+      margin: 0,
+      nav: false
+    },
+    1200: {
+      items: 4,
+      margin: 0,
+      nav: false,
+      loop: true
+    }
+  }
+});
 var lastScrollTop = 0;
 var fixheight = 180;
 $(window).scroll(function() {

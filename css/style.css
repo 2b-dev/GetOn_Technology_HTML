@@ -875,6 +875,23 @@ input:checked + .slider:before {
   font-size: 22px;
   font-weight: 400;
 }
+#images-agent.owl-carousel .owl-dots{
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+#images-agent.owl-carousel button.owl-dot{
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 1px solid #58595b;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+#images-agent.owl-carousel button.owl-dot.active{
+  background-color: #58595b;
+}
 @media (max-width: 575px) {
   .label-switch-lang {
     right: 0.5rem;
