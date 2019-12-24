@@ -13,6 +13,8 @@
   <link rel="stylesheet" href="./assets/OwlCarousel/assets/owl.carousel.min.css" />
   <link rel="stylesheet" href="./assets/OwlCarousel/assets/owl.theme.default.min.css" />
   <link rel="stylesheet" href="./assets/fancybox/jquery.fancybox.min.css" />
+  <link rel="stylesheet"
+    href="https://earthchie.github.io/jquery.Thailand.js/jquery.Thailand.js/dist/jquery.Thailand.min.css">
   <link rel="stylesheet" href="./css/style.css" />
 </head>
 
@@ -137,9 +139,51 @@
       </div>
       <div class="update-product">
         <div class="container-fluid">
-          <div class="row">
-            <div class="col-12">
-              dd
+          <div class="row justify-content-lg-center">
+            <div class="col-12 col-md-6 col-lg-5 px-lg-5 mb-3 mb-md-3 mb-lg-4">
+              <p class="txt-label-form">ชื่อ*</p>
+              <input class="form-control form-input-geton" type="text" placeholder="กรุณากรอก">
+            </div>
+            <div class="col-12 col-md-6 col-lg-5 px-lg-5 mb-3 mb-md-3 mb-lg-4">
+              <p class="txt-label-form">นามสกุล*</p>
+              <input class="form-control form-input-geton" type="text" placeholder="กรุณากรอก">
+            </div>
+            <div class="col-12 col-md-6 col-lg-5 px-lg-5 mb-3 mb-md-3 mb-lg-4">
+              <p class="txt-label-form">เบอร์โทรศัพท์*</p>
+              <input class="form-control form-input-geton" type="text" placeholder="กรุณากรอก">
+            </div>
+            <div class="col-12 col-md-6 col-lg-5 px-lg-5 mb-3 mb-md-3 mb-lg-4">
+              <p class="txt-label-form">อีเมล*</p>
+              <input class="form-control form-input-geton" type="text" placeholder="กรุณากรอก">
+            </div>
+            <div class="col-12 col-md-6 col-lg-5 px-lg-5 mb-3 mb-md-3 mb-lg-4">
+              <p class="txt-label-form">เพศ*</p>
+              <div class="form-input-geton geton-radio">
+                <div class="row">
+                  <div class="col-6">
+                    <div class="custom-control custom-radio custom-control-radio-geton">
+                      <input type="radio" class="custom-control-input" id="female" name="sex">
+                      <label class="custom-control-label" for="female">หญิง</label>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="custom-control custom-radio custom-control-radio-geton">
+                      <input type="radio" class="custom-control-input" id="male" name="sex">
+                      <label class="custom-control-label" for="male">ชาย</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-5 px-lg-5 mb-3 mb-md-3 mb-lg-4">
+              <p class="txt-label-form">จังหวัดที่อยู่ปัจจุบัน*</p>
+              <div class="autocomplete">
+                <input id="province" class="form-control form-input-geton" type="text" placeholder="กรุณากรอก">
+              </div>
+            </div>
+            <div class="col-12 text-center mt-md-3 mt-lg-5">
+              <p class="txt-label-form pl-0">*กรุณาตรวจสอบข้อมูลให้เรียบร้อยก่อนกดส่ง</p>
+              <button class="btn btn-send-agent">ส่งข้อมูล</button>
             </div>
           </div>
         </div>
@@ -225,6 +269,9 @@
   <script type="text/javascript" src="./assets/OwlCarousel/owl.carousel.min.js"></script>
   <script type="text/javascript" src="./assets/fancybox/jquery.fancybox.min.js"></script>
   <script type="text/javascript" src="./js/core.js"></script>
+  <script>
+    autocomplete(document.getElementById("province"), changwat);
+  </script>
 </body>
 
 </html>
