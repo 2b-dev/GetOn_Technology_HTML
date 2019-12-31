@@ -67,11 +67,26 @@
   overflow: hidden;
   margin-bottom: 0;
 }
-
+.section-content-contact{
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: #f1f8f1;
+}
 .switch input {
   display: none;
 }
-
+.box-contact-type{
+  padding: 1rem;
+  padding-left: 7rem;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-size: 5rem 5rem;
+  background-position: 1rem 1rem;
+  min-height: 100px;
+}
+.box-contact-type.type-phone{
+  background-image: url('../img/contact/phone.png');
+}
 .slider {
   background-color: #ffffff;
   bottom: 0;
@@ -1569,6 +1584,11 @@ input:checked + .slider:before {
   .section-relate-news {
     padding-left: 6rem;
     padding-right: 6rem;
+  }
+  .section-content-contact{
+    padding-left: 3rem;
+    padding-right: 3rem;
+    background-color: #f1f8f1;
   }
   .section-customer {
     padding-left: 3rem;
