@@ -1109,6 +1109,16 @@ input:checked + .slider:before {
   box-shadow: 0 0 0 1px rgba(180, 216, 180, 0.76);
   border-color: #b4d8b4;
 }
+.section-map{
+  background-color: #ffffff;
+  width: 100%;
+  text-align: center;
+}
+.text-find-map{
+  font-size: 34px;
+  font-weight: 500;
+  margin-bottom: 3rem;
+}
 @media (max-width: 575px) {
   .label-switch-lang {
     right: 0.5rem;
@@ -1126,6 +1136,10 @@ input:checked + .slider:before {
 @media (max-width: 767px) {
   .box-solutions-home {
     width: 40%;
+  }
+  .text-find-map{
+    font-size: 24px;
+    margin-bottom: 2rem;
   }
   .text-title-csr {
     font-size: 18px;
