@@ -67,7 +67,7 @@
   overflow: hidden;
   margin-bottom: 0;
 }
-.section-content-contact{
+.section-content-contact {
   padding-left: 1rem;
   padding-right: 1rem;
   background-color: #f1f8f1;
@@ -75,7 +75,7 @@
 .switch input {
   display: none;
 }
-.box-contact-type{
+.box-contact-type {
   padding: 3rem;
   padding-top: 1.2rem;
   padding-bottom: 1rem;
@@ -90,22 +90,24 @@
   justify-content: center;
   margin-bottom: 2rem;
 }
-.box-contact-type p{
+.box-contact-type p,
+.text-title-send {
   font-size: 28px;
   font-weight: 500;
   margin-bottom: 0;
 }
-.box-contact-type p:first-of-type{
+.box-contact-type p,
+.text-title-send:first-of-type {
   margin-bottom: 0.5rem;
 }
-.box-contact-type.type-phone{
-  background-image: url('../img/contact/phone.png');
+.box-contact-type.type-phone {
+  background-image: url("../img/contact/phone.png");
 }
-.box-contact-type.type-fax{
-  background-image: url('../img/contact/fax.png');
+.box-contact-type.type-fax {
+  background-image: url("../img/contact/fax.png");
 }
-.box-contact-type.type-pin{
-  background-image: url('../img/contact/pin.png');
+.box-contact-type.type-pin {
+  background-image: url("../img/contact/pin.png");
 }
 .slider {
   background-color: #ffffff;
@@ -822,6 +824,27 @@ input:checked + .slider:before {
 .btn-send-agent:hover {
   background-color: #ffffff;
 }
+.btn-send-form {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 300;
+  border: 1px solid #1b6565;
+  border-radius: 1.5rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  min-width: 180px;
+  height: calc(1.5em + 0.75rem + 2px);
+  background-color: #1b6565;
+  text-transform: none;
+}
+
+.btn-send-form:hover {
+  background-color: #ffffff;
+  color: #1b6565;
+  font-weight: 500;
+}
 .select-month-news {
   width: calc(26% - 2px);
   height: calc(100% - 2px);
@@ -897,6 +920,13 @@ input:checked + .slider:before {
 }
 .text-detail-news {
   font-size: 20px;
+}
+.box-send-mes {
+  background-color: #ffffff;
+  padding: 1.5rem;
+}
+.box-form-send {
+  padding: 0.5rem;
 }
 .ul-social-news {
   width: 100%;
@@ -1060,6 +1090,25 @@ input:checked + .slider:before {
 #images-ceo.owl-carousel button.owl-dot.active {
   background-color: #58595b;
 }
+.label-send-form {
+  font-size: 22px;
+  font-weight: 400;
+  padding-left: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+.input-send-form {
+  width: 100%;
+  border-radius: 12px;
+  font-size: 20px;
+  border-color: #4a954c;
+  margin-bottom: 1rem;
+}
+
+.input-send-form:focus,
+.input-send-form:active {
+  box-shadow: 0 0 0 1px rgba(180, 216, 180, 0.76);
+  border-color: #b4d8b4;
+}
 @media (max-width: 575px) {
   .label-switch-lang {
     right: 0.5rem;
@@ -1083,7 +1132,7 @@ input:checked + .slider:before {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
   }
-  .text-title-csr.detail{
+  .text-title-csr.detail {
     margin-top: 2.5rem;
   }
   .btn-send-agent {
@@ -1258,6 +1307,26 @@ input:checked + .slider:before {
   .txt-steap-agent-detail {
     font-size: 18px;
   }
+  .box-contact-type {
+    padding: 1rem;
+    padding-top: 1rem;
+    padding-left: 6rem;
+    padding-bottom: 1rem;
+    background-position: 1rem 1rem;
+    background-size: 4.2rem 4.2rem;
+  }
+  .box-contact-type p,
+  .text-title-send {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+  .label-send-form{
+    font-size: 18px;
+  }
+  .input-send-form{
+    font-size: 18px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -1266,10 +1335,24 @@ input:checked + .slider:before {
     bottom: 10px;
     right: 2rem;
   }
+  .box-contact-type {
+    padding: 1rem;
+    padding-top: 1.5rem;
+    padding-left: 7rem;
+    padding-bottom: 1rem;
+    background-position: 1.2rem 1.2rem;
+    background-size: 4.5rem 4.5rem;
+  }
+  .box-contact-type p,
+  .text-title-send {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 0;
+  }
   .box-timeline {
     padding: 1rem;
   }
-  .text-title-csr.detail{
+  .text-title-csr.detail {
     margin-top: 2.5rem;
   }
   .box-about-detail {
@@ -1501,7 +1584,21 @@ input:checked + .slider:before {
     margin-bottom: 0;
     height: 50px;
   }
-  .ul-nav-geton .li-nav-geton .a-nav-geton{
+  .box-contact-type {
+    padding: 1rem;
+    padding-top: 1.5rem;
+    padding-left: 7rem;
+    padding-bottom: 1rem;
+    background-position: 1.2rem 1.2rem;
+    background-size: 4.5rem 4.5rem;
+  }
+  .box-contact-type p,
+  .text-title-send {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+  .ul-nav-geton .li-nav-geton .a-nav-geton {
     font-size: 16px;
   }
   .box-timeline {
@@ -1605,7 +1702,7 @@ input:checked + .slider:before {
     padding-left: 6rem;
     padding-right: 6rem;
   }
-  .section-content-contact{
+  .section-content-contact {
     padding-left: 3rem;
     padding-right: 3rem;
     background-color: #f1f8f1;
