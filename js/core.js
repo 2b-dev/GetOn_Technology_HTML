@@ -111,6 +111,23 @@ $("#images-ceo").owlCarousel({
     }
   }
 });
+$(".btn-uploadfile").on("click", function() {
+  $("#fileupload").click();
+});
+$("#fileupload").on("change", function() {
+  var file = $("#fileupload")[0].files[0];
+  //$("#textfile").html(file.name);
+  if ((file == "") | (file == null)) {
+    $("#textfile").html("ไม่ได้เลือกไฟล์ใด");
+  } else {
+    $("#textfile").html(file.name);
+  }
+});
+$(".btn-reset").on("click", function() {  
+  $("#fileupload").val('');
+  $('.input-reg-job').val('');
+  $("#textfile").html("ไม่ได้เลือกไฟล์ใด");
+});
 var lastScrollTop = 0;
 var fixheight = 180;
 $(window).scroll(function() {
@@ -280,4 +297,3 @@ var changwat = [
   "ยะลา",
   "กรุงเทพมหานคร"
 ];
-
