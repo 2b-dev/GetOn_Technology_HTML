@@ -26,7 +26,7 @@ $("#footer-owl-carousel").owlCarousel({
       nav: false
     },
     1200: {
-      items: 7,
+      items: 5,
       margin: 40,
       nav: false,
       loop: true
